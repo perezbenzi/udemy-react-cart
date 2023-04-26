@@ -1,22 +1,21 @@
-import { Component } from "react";
-import Button from "./components/Button/button";
-import "./App.css"
-import Button2 from "./components/Button/button2";
-
-
+import { Component } from 'react';
+import './App.css';
+import Productos from './components/Productos';
 
 class App extends Component {
-  
+  state = {
+    productos: [
+      { name: 'Tomate', price: 100, img: '/img/tomate.jpg' },
+      { name: 'Lechuga', price: 50, img: '/img/lechuga.jpg' },
+      { name: 'Arbejas', price: 300, img: '/img/arbejas.jpg' },
+    ],
+  };
   render() {
-
-    console.log(this.state)
     return (
       <div>
-        <p>Hola mundo</p>
-        {/* <Button onClick={()=> this.setState({ valor: 2})}> Enviar </Button> */}
-        <Button2> Enviar </Button2>
+        <Productos agregarAlCarro={() => console.log('No hace nada')} productos={this.state.productos} />
       </div>
-    )
+    );
   }
 }
 
