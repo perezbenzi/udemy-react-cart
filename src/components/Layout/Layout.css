@@ -1,0 +1,12 @@
+.layout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout {
+    background-color: rgba(194, 194, 194, 0.308);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 6rem;
+}

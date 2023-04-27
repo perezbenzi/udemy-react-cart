@@ -1,0 +1,8 @@
+.bubble-alert {
+    border: solid;
+    background-color: rgb(247, 159, 159);
+    border-radius: 15px;
+    color: #ffff;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
