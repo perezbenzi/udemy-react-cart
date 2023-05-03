@@ -2,8 +2,16 @@ import { Component } from 'react';
 import './BubbleAlert.css';
 
 class BubbleAlert extends Component {
+  getNumber(n) {
+    if (!n) {
+      return '';
+    }
+    return n > 9 ? '9+' : n;
+  }
+
   render() {
-    return <span className="bubble-alert">5</span>;
+    const { value } = this.props;
+    return <span className="bubble-alert">{this.getNumber(value)}</span>;
   }
 }
 
