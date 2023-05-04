@@ -2,7 +2,7 @@ import { Component } from 'react';
 
 class Logo extends Component {
   render() {
-    return <h1>Hols</h1>;
+    return <h1>Tienda</h1>;
   }
 }
 
