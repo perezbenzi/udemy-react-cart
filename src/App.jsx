@@ -42,6 +42,7 @@ class App extends Component {
     if (!this.state.carro.length) {
       return;
     }
+
     this.setState({ esCarroVisible: !this.state.esCarroVisible });
   };
 
